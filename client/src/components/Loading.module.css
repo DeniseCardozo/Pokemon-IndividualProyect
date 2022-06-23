@@ -1,0 +1,11 @@
+.loadingImage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        width: 100%;
+        min-height: 100vh;
+        background: url("../tools/loadedPokemons.gif") no-repeat center center;
+        background-size: cover;
+        background-attachment:scroll;
+    }

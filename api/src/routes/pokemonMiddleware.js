@@ -31,26 +31,39 @@ router.get("/", (req, res, next)=>{
         ]).then((pokemons) => { 
             const apiPokemons = pokemons[0].map( p => {
                 return {
+                    id_Pokemon: p.id,
                     name: p.name,
                     types: p.types.map(p => p.type.name),
-                    image: p.sprites.other["official-artwork"].front_default
+                    image: p.sprites.other["official-artwork"].front_default,
+                    health: p.stats[0].base_stat,
+                    attack: p.stats[1].base_stat,
+                    defense: p.stats[2].base_stat, 
+                    speed: p.stats[5].base_stat, 
+                    height: p.height, 
+                    weight: p.weight
                 }});
             
             const dataBasePokemon= pokemons[1].map( p => {
-                console.log(p);
+        
                 return {
+                    id_Pokemon: p.id_Pokemon,
                     name: p.name,
                     types: p.Types.map(p => p.name),   
-                    image: p.image                             
+                    image: p.image,
+                    health: p.health,
+                    attack: p.attack,
+                    defense: p.defense,
+                    speed: p.speed ,
+                    height: p.height, 
+                    weight: p.weight 
                 }
             });
-                // console.log(dataBasePokemon);
         
             const allPokemons = apiPokemons.concat(dataBasePokemon); 
 
             const name = req.query.name;
             if (name) {
-                let characterByName = allPokemons.find(pokemon => pokemon.name.toLowerCase().includes(name.toLowerCase()) )
+                let characterByName = allPokemons.filter(pokemon => pokemon.name.toLowerCase() === name.toLowerCase() )
                 if(characterByName) {
                     return res.status(200).send(characterByName);
                 } else{
@@ -97,7 +110,7 @@ router.get("/:idPokemon", async (req, res, next) => {
             const apiPokemons = pokemons[0].map( detailPokemon => {
                 return {
                     name: detailPokemon.name,
-                    type: detailPokemon.types.map(p => p.type.name),
+                    types: detailPokemon.types.map(p => p.type.name),
                     image: detailPokemon.sprites.other["official-artwork"].front_default,
                     id_Pokemon: detailPokemon.id,
                     health: detailPokemon.stats[0].base_stat,
@@ -112,7 +125,7 @@ router.get("/:idPokemon", async (req, res, next) => {
                 return {
                     name: detailPokemon.name,
                     types: detailPokemon.Types.map(p => p.name),
-                    image: detailPokemon.image,                              
+                    image: detailPokemon.image, 
                     id_Pokemon: detailPokemon.id_Pokemon,
                     health: detailPokemon.health,
                     attack: detailPokemon.attack,
@@ -123,7 +136,7 @@ router.get("/:idPokemon", async (req, res, next) => {
                 }});
                 
             let {idPokemon} = req.params;
-            if (idPokemon.search('[a-zA-Z]+') === -1){  //<--- leer un poco más sobre metodo search
+            if (idPokemon.search('[a-zA-Z]+') === -1){
                 idPokemon = parseInt(idPokemon, 10)
             }
             const allPokemons = apiPokemons.concat(dataBasePokemon);
@@ -133,7 +146,7 @@ router.get("/:idPokemon", async (req, res, next) => {
             if(!pokemonFinded) {
                 return res.status(404).send("Sorry, that Pokemon does not exist.");
             }
-           // console.log(pokemonFinded);            
+           
             res.status(200).json(pokemonFinded);
             });
             
@@ -156,7 +169,7 @@ router.post("/", async (req, res, next) => {
                 name: name
             }
         });
-        console.log(dataBasePokemons);
+        
         if(dataBasePokemons.length !== 0) {
             return res.status(404).send("Sorry, that pokemon already exists. Please try again!");
         }

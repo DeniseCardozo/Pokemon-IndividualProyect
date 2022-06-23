@@ -1,0 +1,71 @@
+.header {
+    /* margin-top: 70px; */
+    width: 100%;
+}    
+
+.image {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.pokepokepoke {
+    display: inline-block;
+    width: 1000px;
+    height: 220px;
+    margin-bottom: 140px;
+}
+
+.title1, .title2, .title3{
+    font-size: 4rem;
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    /* font-family: 'Amatic SC', cursive;  */
+    /* font-family: 'DotGothic16', sans-serif;*/
+    /* font-family: 'Text Me One', sans-serif; */
+    /* font-family: 'VT323', monospace;  */
+
+    color: rgb(117, 163, 109);
+    text-shadow: 13px 0 0 rgb(255, 255, 255),-13px 0 0 rgba(255, 255, 255),0 13px 0 rgba(255, 255, 255), 0 -13px 0 rgba(255, 255, 255);
+    margin-top: 115px
+ 
+    /* transform: rotate(-20deg); */
+}
+
+
+.title1, .title2, .title3{
+    left: 30%;
+}
+.title1{
+    top: 25px;
+}
+.title2{
+    top: 150px;
+}
+
+
+
+.bigBox {
+    background-image: url(../tools/pastito.jpg);
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    background-attachment:scroll;
+    background-size:contain;
+    /* position: absolute; */
+    /* top: 408px;  */
+    /* height: 1800px;
+    width: 100%; */
+}
+
+.content {
+    max-width: 992px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+

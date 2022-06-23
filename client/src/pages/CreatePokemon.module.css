@@ -1,0 +1,203 @@
+
+
+.content {
+    /* max-width: 900px;  */
+    margin: 60px auto 0 auto;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 575px;
+    background: rgba(0, 0, 0, 0.662);
+}
+
+.boxTitle {
+    width: 900px; 
+    height: 40px;
+    position: relative;
+    margin: 0;
+    left: 100px;
+}
+
+.title {
+    color: rgb(238, 205, 59);
+    font-size: 2.9rem;
+    margin: 0;
+}
+
+.boxForm {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(179, 149, 16, 0.782);
+    border-radius: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.containerInputs {
+    height: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 10px; */
+    align-items: center;
+    margin: 0;
+}
+
+.containerTypes {
+    height: 125px;
+    display: inline-block;
+    margin: 0;
+
+}
+
+.subContainerTypes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.name, .image {
+    width: 330px; 
+    height: 100px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.input {
+    width: 290px;
+    height: 2.8rem;
+    border-radius: 8px;
+    border: none;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem; 
+    padding-left: 15px ;
+    color:rgb(130, 130, 130)
+}
+
+.inputString {
+    width: 310px;
+    height: 2.8rem;
+    border-radius: 8px;
+    border: none;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem; 
+    padding-left: 15px ;
+    color:rgb(130, 130, 130)
+}
+
+.inputNum {
+    width: 80px;
+    height: 2.8rem;
+    border-radius: 8px;
+    border: none;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem; 
+    padding-left: 15px ;
+    color:rgb(130, 130, 130)
+}
+
+.number{
+    width: 210px; 
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.textImage {
+    font-size: 0.8rem;
+    padding: 0;
+    margin-top: 5px;
+    font-family: 'Fredoka One', cursive;
+    color: antiquewhite;
+    /* font-family: 'Amatic SC', cursive;  */
+    /* font-family: 'DotGothic16', sans-serif;*/
+    /* font-family: 'Text Me One', sans-serif; */
+}
+
+.boxTypes {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+    width: 700px; 
+    position: relative;
+    margin: 0 auto;
+    justify-content:center;
+}
+
+/* .miniBox {
+    width: 120px;
+    height: 21px;
+    font-size: 0.87rem;
+    color: aliceblue;
+} */
+
+.subtitle {
+    color:aliceblue;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+}
+
+.error {
+    color: rgb(123, 37, 37);
+    font-family: 'Fredoka One', cursive;
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+
+
+.video {
+    width: 100%;
+    /* height: 100%; */
+    min-height: 100vh;
+    background: url("https://c.tenor.com/odiBZWBajAkAAAAC/cute-pokemon.gif") no-repeat center center;
+    background-size: cover;
+    background-attachment:scroll;
+    display: inline-block;
+
+    /* background-position: center center;
+
+    background-attachment:scroll;
+    background-size:contain; */
+
+
+/* position: fixed;
+min-width: 100%;
+min-height: 100%;
+top:50%;
+left: 50%;
+
+transform: translateX(-50%) translateY(-50%);
+
+z-index: -1; */
+
+} 
+
+.button {
+    border-radius: 8px;
+    background-color: aliceblue;
+    width: 100%;
+    border: none;
+    color: #ce9b3d;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.button:hover {
+    color: aliceblue;
+    transition: 0.5s;
+    background-color: #ce9b3d;
+    transition: 0.5s;
+}

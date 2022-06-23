@@ -1,0 +1,80 @@
+.bigBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100vh;
+    background: url("../tools/blue.gif") no-repeat center center;
+    background-size: cover;
+    background-attachment:scroll;
+ 
+}
+
+.boxImage {
+    margin-top: 80px;
+    background-color: rgba(8, 29, 29, 0.701);
+    height: 500px;
+    border-radius: 60px;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 450px;
+}
+
+
+.boxData{
+    margin-top: 80px;
+    background-color: rgba(8, 29, 29, 0.701);
+    margin-left: 20px;
+    width: 35%;
+    height: 500px;
+    border-radius: 60px;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 1.7rem;
+    color: #E9EFC0;
+}
+
+.name {
+    font-size: 4rem;
+    margin: 40px auto 0  60px;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+
+    /* font-family: 'Amatic SC', cursive;  */
+    /* font-family: 'DotGothic16', sans-serif;*/
+    /* font-family: 'Text Me One', sans-serif; */
+}
+
+.title {
+     margin: 10px 0 0 0;
+    font-family: 'Text Me One', sans-serif; 
+}
+
+p {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.6rem;
+
+}
+
+.prueba1 {
+   
+    padding: 30px;
+    
+} 
+
+.prueba2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    
+} 
+
