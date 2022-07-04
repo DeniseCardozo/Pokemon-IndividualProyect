@@ -1,87 +1,79 @@
-
-
 .content {
-    /* max-width: 900px;  */
-    margin: 60px auto 0 auto;
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 575px;
     background: rgba(0, 0, 0, 0.662);
 }
-
-.boxTitle {
-    width: 900px; 
-    height: 40px;
-    position: relative;
-    margin: 0;
-    left: 100px;
+.video {
+    background: url("../tools/cute-pokemon.gif") no-repeat center center;
+    justify-content: center;
+} 
+.content, .video {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-attachment:scroll;
 }
-
+.boxTitle {
+    width: 500px; 
+    height: 40px;
+    margin: 70px 0 0 10%;
+}
 .title {
     color: rgb(238, 205, 59);
     font-size: 2.9rem;
     margin: 0;
 }
-
 .boxForm {
-    width: 800px;
-    height: 500px;
+    padding: 30px 30px;
+    width: 60%;
+    height: auto;
     background-color: rgba(179, 149, 16, 0.782);
     border-radius: 60px;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
-
-
-.containerInputs {
-    height: 85px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* padding: 10px; */
-    align-items: center;
-    margin: 0;
-}
-
 .containerTypes {
-    height: 125px;
-    display: inline-block;
+    height: 120px;
+    width: 100%;
     margin: 0;
-
 }
-
 .subContainerTypes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 700px;
+    width: 100%;
 }
-
+.boxType1, .boxType2{
+    width: 47%;
+}
+.input {
+    width: 100%;
+    height: 2.7rem;
+    border-radius: 8px;
+    border: none;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem; 
+    padding-left: 15px ;
+    color:rgb(130, 130, 130)
+}
+.containerInputsString {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
 .name, .image {
-    width: 330px; 
-    height: 100px;
-    display: inline-block;
+    width: 47%; 
+    height: 80px;
     background-color: transparent;
 }
-
-.input {
-    width: 290px;
-    height: 2.8rem;
-    border-radius: 8px;
-    border: none;
-    font-family: 'VT323', monospace;
-    font-size: 1.5rem; 
-    padding-left: 15px ;
-    color:rgb(130, 130, 130)
-}
-
 .inputString {
-    width: 310px;
-    height: 2.8rem;
+    width: 90%;
+    height: 2.7rem;
     border-radius: 8px;
     border: none;
     font-family: 'VT323', monospace;
@@ -89,10 +81,18 @@
     padding-left: 15px ;
     color:rgb(130, 130, 130)
 }
-
+.containerInputs {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
 .inputNum {
     width: 80px;
-    height: 2.8rem;
+    height: 2.7rem;
     border-radius: 8px;
     border: none;
     font-family: 'VT323', monospace;
@@ -100,44 +100,20 @@
     padding-left: 15px ;
     color:rgb(130, 130, 130)
 }
-
 .number{
-    width: 210px; 
-    height: 80px;
+    width: 30%; 
+    height: 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .textImage {
     font-size: 0.8rem;
     padding: 0;
     margin-top: 5px;
     font-family: 'Fredoka One', cursive;
     color: antiquewhite;
-    /* font-family: 'Amatic SC', cursive;  */
-    /* font-family: 'DotGothic16', sans-serif;*/
-    /* font-family: 'Text Me One', sans-serif; */
 }
-
-.boxTypes {
-    background-color: transparent;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content:space-between; */
-    width: 700px; 
-    position: relative;
-    margin: 0 auto;
-    justify-content:center;
-}
-
-/* .miniBox {
-    width: 120px;
-    height: 21px;
-    font-size: 0.87rem;
-    color: aliceblue;
-} */
-
 .subtitle {
     color:aliceblue;
     margin-top: 10px;
@@ -146,43 +122,12 @@
     font-family: 'VT323', monospace;
     font-size: 2rem;
 }
-
 .error {
     color: rgb(123, 37, 37);
     font-family: 'Fredoka One', cursive;
     font-size: 0.7rem;
     margin-top: 5px;
 }
-
-
-
-.video {
-    width: 100%;
-    /* height: 100%; */
-    min-height: 100vh;
-    background: url("https://c.tenor.com/odiBZWBajAkAAAAC/cute-pokemon.gif") no-repeat center center;
-    background-size: cover;
-    background-attachment:scroll;
-    display: inline-block;
-
-    /* background-position: center center;
-
-    background-attachment:scroll;
-    background-size:contain; */
-
-
-/* position: fixed;
-min-width: 100%;
-min-height: 100%;
-top:50%;
-left: 50%;
-
-transform: translateX(-50%) translateY(-50%);
-
-z-index: -1; */
-
-} 
-
 .button {
     border-radius: 8px;
     background-color: aliceblue;
@@ -191,13 +136,129 @@ z-index: -1; */
     color: #ce9b3d;
     text-align: center;
     font-family: 'VT323', monospace;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     margin: 0;
 }
-
 .button:hover {
     color: aliceblue;
     transition: 0.5s;
     background-color: #ce9b3d;
     transition: 0.5s;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 1100px) {
+    .inputNum {
+        width: 60px;
+    }
+}
+@media (max-width: 990px) {
+    .inputNum {
+        width: 50px;
+    }
+}
+@media (max-width: 920px) {
+    .inputNum {
+        width: 45px;
+    }
+    .subtitle {
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 850px) {
+    .subtitle {
+        font-size: 1.7rem;
+    }
+    .inputString, .input {
+        font-size: 1.3rem; 
+    }
+}
+
+@media (max-width: 800px) {
+    .containerInputs {
+        justify-content: space-evenly;
+    }
+    .number{
+        width: 40%; 
+    }
+    .inputNum {
+        width: 80px;
+    }
+}
+@media (max-width: 750px) {
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .inputNum {
+        width: 60px;
+    }
+    .inputString, .input {
+        font-size: 1.2rem; 
+    }
+}  
+@media (max-width: 700px) {
+    .name, .image {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .inputNum {
+        width: 45px;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .number{
+        width: 45%; 
+    }
+    .containerInputs {
+        justify-content: space-between;
+    }
+    .title {
+        font-size: 2.7rem;
+    }
+}
+@media (max-width: 550px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .number{
+        width: 47%; 
+    }
+    .error {
+        font-size: 0.6rem;
+        margin-bottom: 5px;
+    }
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    .inputNum {
+        width: 35px;
+    }
+    .input, .inputString, .inputNum {
+        padding-left: 8px ;
+    }
+    .title {
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 450px) {
+    .title {
+        font-size: 2.1rem;
+    }
+}
+@media (max-width: 410px) {
+    .boxForm {
+        padding: 30px;
+        width: 70%;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .boxTitle {
+        margin: 70px 0 0 25px;
+    }
 }

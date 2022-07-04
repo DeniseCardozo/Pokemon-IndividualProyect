@@ -46,7 +46,6 @@ const Filters = ({setCurrentPage, setOrder}) => {
         setOrder(`Order ${e.target.value}`)
     }
 
-
     return (
         <React.Fragment>
             <div className={style.contents}>
@@ -66,26 +65,23 @@ const Filters = ({setCurrentPage, setOrder}) => {
                     }
                 </div> 
                 <div className={style.boxOrder}>
-                <div className={style.orderAttack}>
-                    <label>ATTACK</label>
-                    <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByAttack(e)}>⬆️</button>
-                    <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByAttack(e)}>⬇️</button>
+                    <div className={style.orderAttack}>
+                        <label>ATTACK</label>
+                        <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByAttack(e)}>⬆️</button>
+                        <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByAttack(e)}>⬇️</button>
+                    </div>
+                    <div className={style.orderDefense}>
+                        <label>DEFENSE</label>
+                        <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByDefense(e)}>⬆️</button>
+                        <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByDefense(e)}>⬇️</button>
+                    </div>
+                    <div className={style.orderHealth}>
+                        <label>HEALTH</label>
+                        <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByHealth(e)}>⬆️</button>
+                        <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByHealth(e)}>⬇️</button>
+                    </div>
                 </div>
-                <div className={style.orderDefense}>
-                    <label>DEFENSE</label>
-                    <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByDefense(e)}>⬆️</button>
-                    <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByDefense(e)}>⬇️</button>
-                </div>
-                <div className={style.orderHealth}>
-                    <label>HEALTH</label>
-                    <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByHealth(e)}>⬆️</button>
-                    <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByHealth(e)}>⬇️</button>
-                </div>
-                </div>
-                
             </div>
-            
-
         </React.Fragment>
     )
 };

@@ -1,64 +1,36 @@
 .header {
-    /* margin-top: 70px; */
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }    
-
 .image {
     background-color: transparent;
     position: absolute;
     width: 100%;
-    margin-bottom: 10px;
+    top: 0;        
+    object-fit: cover;
+    height: 350px;
 }
-
-
 .pokepokepoke {
     display: inline-block;
-    width: 1000px;
-    height: 220px;
-    margin-bottom: 140px;
+    margin-bottom: 180px;
 }
-
-.title1, .title2, .title3{
+.title{
+    margin: 20% auto 0 auto;
+    display: inline-block;
+    position: relative;
     font-size: 4rem;
     font-family: 'Fredoka One', cursive;
-    position: relative;
-    /* font-family: 'Amatic SC', cursive;  */
-    /* font-family: 'DotGothic16', sans-serif;*/
-    /* font-family: 'Text Me One', sans-serif; */
-    /* font-family: 'VT323', monospace;  */
-
     color: rgb(117, 163, 109);
     text-shadow: 13px 0 0 rgb(255, 255, 255),-13px 0 0 rgba(255, 255, 255),0 13px 0 rgba(255, 255, 255), 0 -13px 0 rgba(255, 255, 255);
-    margin-top: 115px
- 
-    /* transform: rotate(-20deg); */
 }
-
-
-.title1, .title2, .title3{
-    left: 30%;
-}
-.title1{
-    top: 25px;
-}
-.title2{
-    top: 150px;
-}
-
-
-
 .bigBox {
-    background-image: url(../tools/pastito.jpg);
+    background-image: url(../tools/pastitolargo.jpg);
     background-position: center center;
-    /* background-repeat: no-repeat; */
     background-attachment:scroll;
     background-size:contain;
-    /* position: absolute; */
-    /* top: 408px;  */
-    /* height: 1800px;
-    width: 100%; */
 }
-
 .content {
     max-width: 992px;
     position: relative;
@@ -68,4 +40,46 @@
     justify-content:center;
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+@media (max-width: 700px) {
+    .pokepokepoke {
+        margin-bottom: 130px;
+    }
+    .title{
+        margin: 28% auto 0 auto;
+        font-size: 2.8rem;
+    }
+    .bigBox {
+        background-size:cover;
+    }
+    .image {    
+        object-fit: cover;
+        height: 300px;
+    }
+}
+@media (max-width: 480px) {
+    .pokepokepoke {
+        margin-bottom: 110px;
+    }
+    .nav {
+        flex-direction:row;
+        justify-content: center;
+    }
+    .links:hover{
+        background: none;
+        color: blue;
+    }
+    .title{
+        margin: 35% auto 0 auto;
+        font-size: 2rem;
+    }
+    .image {    
+        height: 250px;
+        width: 480px;
+    }
+    .bigBox {
+        background-size:cover;
+        width: 480px;
+    }
+}

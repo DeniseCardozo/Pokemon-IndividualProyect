@@ -9,12 +9,11 @@ const router = Router();
 
 router.get("/", (req, res, next)=>{
     try {                                     
-        let apiPokemon = [];
-            for(let i = 1; i <= 40; i++) {
-                apiPokemon.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`))};
-        
-        const apiPokemonPromise = Promise.all(apiPokemon)
-            .then((pokeData) => Promise.all(pokeData.map(result => result.json())));
+        const apiPokemonPromise = fetch("https://pokeapi.co/api/v2/pokemon?limit=40")
+            .then(data => data.json())
+            .then(json => Promise.all(json.results.map(poke => fetch(poke.url)
+                .then(data => data.json())
+                )))
 
         const dataBasePokemonPromise = Pokemon.findAll({
             include: {

@@ -1,17 +1,8 @@
-/* :root {
-    width: 300px;
-    padding: 10px;
-    background-color: #9fc921;
-    --bgcolor:#9fc921;
-} */
-
 .contents {
-width: 700px;
-height: 170px;
-margin: 10px auto 0 auto;
-position: relative;
+    width: 99%;
+    margin: 10px auto 0 auto;
+    position: relative;
 }
-
 .button, .buttonAll {
     border-radius: 8px;
     background-color: aliceblue;
@@ -22,15 +13,12 @@ position: relative;
     font-size: 1.3rem;
     margin: 5px 5px 0 0;
 }
-
 .buttonAll {
     width: 100%;
 }
-
 .orderName, .filterTypes, .filterCreated, .boxOrder{
     display: flex;
 }
-
 .buttonOrder1, .buttonOrder2, .buttonExis, .buttonCrea {
     width: 50%;
     border-radius: 8px;
@@ -42,46 +30,37 @@ position: relative;
     font-size: 1.3rem;
     margin-top: 5px;
 }
-
 .buttonAll:hover {
     background-color: #33674e;;
     transition: 0.3s;
 }
-
 .buttonOrder1, .buttonExis {
     margin-right: 5px;
 }
-
 .buttonExis:hover {
     background-color: #33674e;;
     transition: 0.3s;
 }
-
 .buttonCrea:hover {
     background-color: #33674e;;
     transition: 0.3s;
 }
-
 .buttonOrder1:hover {
     background-color: #33674e;;
     transition: 0.3s;
 }
-
 .buttonOrder2:hover {
     background-color: #33674e;;
     transition: 0.3s;
 }
-
 .filterTypes{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .button:hover {
     background-color: #33674e;;
     transition: 0.3s;
 }
-
 .boxOrder {
     margin-top: 5px ;
     color: aliceblue;
@@ -90,14 +69,25 @@ position: relative;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .orderArrow {
     background-color: transparent;
     border: none;
     font-size: 1.4rem;
 }
-
 .orderArrow:hover {
     background-color: #33674e;;
     transition: 0.3s;
 }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 750px) {
+    .button, .buttonAll, .buttonOrder1, .buttonOrder2, .buttonExis, .buttonCrea {
+        font-size: 1.1rem;
+    }
+    .orderArrow {
+        background-color: transparent;
+        border: none;
+        font-size: 1.1rem;
+    }
+} 

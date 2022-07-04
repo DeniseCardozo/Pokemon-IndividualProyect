@@ -1,5 +1,4 @@
 .header {
-    /* background: #D54C4C; */
     background: rgba(0, 0, 0, 0.757);
     height: 60px;
     position: fixed;
@@ -7,20 +6,11 @@
     top: 0;
     left: 0;
 }
-
 .nav {
-    max-width: 992px;      
     display:flex;
     justify-content:right;
     margin: 0 auto;
 }
-
-/* .title{
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-} */
-
 .links {
     color: white;
     text-decoration: none;
@@ -31,58 +21,34 @@
     padding: 8px 12px;
     border-radius: 3px;
 }
-
 .links:hover {
     background-color: #61957ca1;
     transition: 0.5s;
 }
-
 .navMenu {
     display: flex;
     margin-right: 40px;
     list-style: none;
 }
 
-.menuIcon {
-    height: 40px;
-    padding: 0 20px;
-    margin: 20px 0;
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-    display: none;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .header {
-        height: 60px;
+        flex-direction: column;
     }
-    
-    .title{
-        font-size: 25px;
-        padding: 0 40px;
-    }
-    
     .links:hover{
         background: none;
-        color: blue;
+        color: #61957ca1;
     }
-    
-    .navMenu {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-        background-color: brown;
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-
-        /* height: calc(100% - 60px);
-        overflow-y: auto; */
+}
+@media (max-width: 480px) {
+    .nav {
+        flex-direction:row;
+        justify-content: center;
     }
-    
-    .menuIcon {
-        display: block;
+    .links:hover{
+        background: none;
+        color: #61957ca1;
     }
-
-
 }

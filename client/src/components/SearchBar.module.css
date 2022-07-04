@@ -1,66 +1,48 @@
 .contents {
-    width: 700px;
-    /* display: flex;
-    justify-content:space-around; */
+    width: 65%;
     border-radius: 8px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.39);
     margin: 0 auto 15px auto;
     top: 130px;
     background-color: #61957c;
     padding: 20px;
-
 }
-
 .input {
     position: relative;
     display:flex;
     justify-content:center;
- 
 }
 .inputName {
     width: 50%;
     height: 3rem;
     border-radius: 8px;
     border: none;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    /* font-family: 'Fredoka One', cursive;
-    position: relative; */
-    /* font-family: 'Amatic SC', cursive;  */
-    /* font-family: 'DotGothic16', sans-serif;*/
-    /* font-family: 'Text Me One', sans-serif; */
     font-family: 'VT323', monospace;
     font-size: 1.5rem; 
     padding-left: 15px ;
 }
-
 .button .buttonImage{
     height: 3rem;
 }
-
 .button {
     background-color: transparent;
     border: none;
     margin-left: 10px;
 }
-
 .buttonImage{
     border-radius: 50%;
     background-color: transparent;
     filter: invert(0.99) hue-rotate(20deg) saturate(1000%);
 }
-
-
 .buttonImage:hover {
     background-color: rgb(151, 151, 151);
     transition: 0.5s;
 }
-
 .textPokedex {
     margin: 0 auto;
     display: table;
     background-color: #61957c;
 }
-
 h4, .text2{
     float: left;
     color: aliceblue;
@@ -68,9 +50,7 @@ h4, .text2{
     font-size: 1.7rem;
     font-family: 'VT323', monospace;
     margin: 0;
-
 }
-
 h4 span{
     position: absolute;
     right: 0;
@@ -78,26 +58,21 @@ h4 span{
     background: #61957c;
     font-family: 'VT323', monospace;
     border-left: 1px solid transparent;
-
     animation: maquina 6s infinite steps(50);
 }
-
 @keyframes maquina {
     from {width: 100%;}
     to {width: 0;}
 }
-
 .filterButton{
     border-radius: 8px;
     background-color: aliceblue;
     width: 20%;
 }
-
 .filterButton:hover {
     background-color: #33674e;;
     transition: 0.5s;
 }
-
 .filterButtontext {
     color: #61957c;
     text-align: center;
@@ -105,23 +80,86 @@ h4 span{
     font-size: 1.7rem;
     margin: 0;
 }
-
 .filterButtontext:hover {
     color: #85d1ac;
     transition: 0.5s;
 }
-
 .text2 {
     font-size: 1rem;
     padding-left: 10px;
 }
-
 .boxFilterbutton{
     display: flex;
     justify-content:center;
     margin-top: 7px;
     align-items: center;
 }
+.boxerror {
+    display: flex;
+    justify-content:center;
+}
+.error {
+    color: rgb(123, 37, 37);
+    font-family: 'Fredoka One', cursive;
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+@media (max-width: 860px) {
+    h4, .text2{
+        font-size: 1.5rem;
+    }
+    .filterButtontext {
+        font-size: 1.5rem;
+    }
+    .text2 {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 750px) {
+    h4, .text2{
+        font-size: 1.35rem;
+    }
+    .filterButtontext {
+        font-size: 1.4rem;
+    }
+    .text2 {
+        font-size: 0.9rem;
+    }
+    .inputName {
+        height: 2.5rem;
+        font-size: 1.4rem; 
+    }
+    .button .buttonImage{
+        height: 2.5rem;
+    } 
+} 
+@media (max-width: 670px) {
+    h4, .text2{
+        font-size: 1.1rem;
+    }
+    .filterButtontext {
+        font-size: 1.3rem;
+    }
+    .text2 {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 550px) {
+    h4, .text2{
+        font-size: 0.9rem;
+    }
+    .text2 {
+        font-size: 0.8rem;
+    }
+    .inputName {
+        height: 2rem;
+        font-size: 1.4rem; 
+    }
+    .button .buttonImage{
+        height: 2rem;
+    }
+} 
 

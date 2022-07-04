@@ -5,8 +5,8 @@ import styles from "./MessageNotFound.module.css"
 
 const MessageNotFound = () => {
     return (
-        <div className="poke-not-found">
-            <img src={imageNoPokemon} alt='imgNotFound' />
+        <div className={styles.notFound}>
+            <img className={styles.notFoundImage} src={imageNoPokemon} alt='imgNotFound' />
             <h2 className={styles.title}>Pokemon not found</h2>
         </div> 
     )
