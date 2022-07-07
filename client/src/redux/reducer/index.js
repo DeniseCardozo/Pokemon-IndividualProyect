@@ -9,7 +9,10 @@ import {
     POST_CREATED_POKEMON, 
     ORDER_BY_ATTACK, 
     ORDER_BY_DEFENSE, 
-    ORDER_BY_HEALTH, 
+    ORDER_BY_HEALTH,
+    ORDER_BY_SPEED,
+    ORDER_BY_HEIGHT,
+    ORDER_BY_WEIGHT,
     SET_STATE_DETAIL_POKEMON } from "../actions/actionTypes";
 
 const initialState = {
@@ -122,6 +125,42 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 pokemons: orderHealth
+                }
+        case ORDER_BY_SPEED:
+            const orderSpeed = action.payload === "ascending" ? 
+            state.pokemons.sort((a, b) => {
+                return a.speed - b.speed;
+            }) :
+            state.pokemons.sort((a, b) => {
+                return b.speed - a.speed;
+            });
+            return {
+                ...state,
+                pokemons: orderSpeed
+                }
+        case ORDER_BY_HEIGHT:
+            const orderHeight = action.payload === "ascending" ? 
+            state.pokemons.sort((a, b) => {
+                return a.height - b.height;
+            }) :
+            state.pokemons.sort((a, b) => {
+                return b.height - a.height;
+            });
+            return {
+                ...state,
+                pokemons: orderHeight
+                }
+        case ORDER_BY_WEIGHT:
+            const orderWeight = action.payload === "ascending" ? 
+            state.pokemons.sort((a, b) => {
+                return a.weight - b.weight;
+            }) :
+            state.pokemons.sort((a, b) => {
+                return b.weight - a.weight;
+            });
+            return {
+                ...state,
+                pokemons: orderWeight
                 }
         default:
             return state

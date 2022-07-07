@@ -10,7 +10,10 @@ import {
     POST_CREATED_POKEMON, 
     ORDER_BY_ATTACK, 
     ORDER_BY_DEFENSE, 
-    ORDER_BY_HEALTH, 
+    ORDER_BY_HEALTH,
+    ORDER_BY_SPEED,
+    ORDER_BY_HEIGHT,
+    ORDER_BY_WEIGHT,
     SET_STATE_DETAIL_POKEMON } from './actionTypes';
 
 export const getAllPokemons = () => {
@@ -132,6 +135,27 @@ export const orderByDefense = (value) => {
 export const orderByHealth = (value) => {
     return {
             type: ORDER_BY_HEALTH,
+            payload: value
+        }
+};
+
+export const orderBySpeed = (value) => {
+    return {
+            type: ORDER_BY_SPEED,
+            payload: value
+        }
+};
+
+export const orderByHeight = (value) => {
+    return {
+            type: ORDER_BY_HEIGHT,
+            payload: value
+        }
+};
+
+export const orderByWeight = (value) => {
+    return {
+            type: ORDER_BY_WEIGHT,
             payload: value
         }
 };

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import style from "./Filters.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { filterPokemonByTypes, filterPokemonCreated, getAllPokemons, getAllTypes, orderByAttack, orderByDefense, orderByName, orderByHealth } from "../redux/actions";
+import { filterPokemonByTypes, filterPokemonCreated, getAllPokemons, getAllTypes, orderByAttack, orderByDefense, orderByName, orderByHealth, orderBySpeed, orderByHeight, orderByWeight } from "../redux/actions";
 
 const Filters = ({setCurrentPage, setOrder}) => {
     const dispatch = useDispatch();
@@ -45,6 +45,24 @@ const Filters = ({setCurrentPage, setOrder}) => {
         setCurrentPage(1);
         setOrder(`Order ${e.target.value}`)
     }
+    function handleOrderBySpeed(e) {
+        e.preventDefault();
+        dispatch(orderBySpeed(e.target.value));
+        setCurrentPage(1);
+        setOrder(`Order ${e.target.value}`)
+    }
+    function handleOrderByHeight(e) {
+        e.preventDefault();
+        dispatch(orderByHeight(e.target.value));
+        setCurrentPage(1);
+        setOrder(`Order ${e.target.value}`)
+    }
+    function handleOrderByWeight(e) {
+        e.preventDefault();
+        dispatch(orderByWeight(e.target.value));
+        setCurrentPage(1);
+        setOrder(`Order ${e.target.value}`)
+    }
 
     return (
         <React.Fragment>
@@ -80,6 +98,22 @@ const Filters = ({setCurrentPage, setOrder}) => {
                         <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByHealth(e)}>⬆️</button>
                         <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByHealth(e)}>⬇️</button>
                     </div>
+                    <div className={style.orderSpeed}>
+                        <label>SPEED</label>
+                        <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderBySpeed(e)}>⬆️</button>
+                        <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderBySpeed(e)}>⬇️</button>
+                    </div>
+                    <div className={style.orderSpeed}>
+                        <label>HEIGHT</label>
+                        <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByHeight(e)}>⬆️</button>
+                        <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByHeight(e)}>⬇️</button>
+                    </div> 
+                    <div className={style.orderSpeed}>
+                        <label>WEIGHT</label>
+                        <button className={style.orderArrow} value="ascending" onClick={(e) => handleOrderByWeight(e)}>⬆️</button>
+                        <button className={style.orderArrow} value="descending" onClick={(e) => handleOrderByWeight(e)}>⬇️</button>
+                    </div> 
+
                 </div>
             </div>
         </React.Fragment>

@@ -14,7 +14,6 @@ function App() {
           <Route exact path="/home" component={Home}/>  
           <Route exact path="/home/create" component={CreatePokemon} />
           <Route path="/detail/:idPokemon" component={PokemonDetail} /> 
-          {/* <Route path="/detail/:idPokemon"><PokemonDetail /></Route> */}
 
       </React.Fragment>
   );
