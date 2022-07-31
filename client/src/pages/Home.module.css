@@ -90,5 +90,7 @@
 }
 
 @media (max-width: 380px) {
-    
+    .title{
+        font-size: 1.8rem;
+    }
 }
