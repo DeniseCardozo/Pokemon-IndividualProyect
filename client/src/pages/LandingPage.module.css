@@ -38,11 +38,10 @@ h1 span{
     to {width: 0;}
 }
 .pokedex {
-    width: 46%;
-    transform: rotate(20deg);
+    width: 500px;
     position: absolute;
     top: 15%;
-    right: 5%;
+    right: 8%;
 }
 .titleWelcome{
     font-size: 5rem;
@@ -212,6 +211,10 @@ h1 span{
     }
 }
 @media (max-width: 400px) {
+    .titleWelcome{
+        font-size: 3.2rem;
+        top:27px;
+    }
     h1 {
         font-size: 80%;
     }
@@ -229,12 +232,20 @@ h1 span{
 }
 @media (max-width: 380px) {
     h1 {
-        font-size: 75%;
+        font-size: 60%;
     }
     .button {
         left: 25%;
+        top:390px;
+        font-size: 3rem;
+        height: 70px;
     }
     .pokedex {
-        width: 270px;
+        width: 240px;
+        top: 33%;
+    }
+    .boxText {
+        top: 8rem;
+        height: 5rem;
     }
 }

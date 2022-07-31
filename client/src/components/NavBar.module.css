@@ -52,3 +52,12 @@
         color: #61957ca1;
     }
 }
+@media (max-width: 380px) {
+    .header {
+        height: 45px;
+    }
+    .links {
+        font-size: 15px;
+        padding: 0 12px;
+    }
+}

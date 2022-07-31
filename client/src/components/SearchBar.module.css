@@ -161,5 +161,63 @@ h4 span{
     .button .buttonImage{
         height: 2rem;
     }
+    .filterButtontext {
+        font-size: 1.5rem;
+    }
+    .filterButton{
+        height: 1.6rem;
+        width: 25%;
+    }
 } 
+
+@media (max-width: 480px) {
+    .contents {
+        width: 80%;
+    }
+    .inputName {
+        height: 2.3rem;
+        width: 60%;
+        font-size: 1.7rem;
+    }
+    .button .buttonImage{
+        height: 2.3rem;
+    }
+    .filterButtontext {
+        font-size: 1.7rem;
+    }
+    .filterButton{
+        height: 2rem;
+        width: 25%;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    .text2{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 380px) {
+    .inputName {
+        height: 3rem;
+        width: 60%;
+        font-size: 2rem;
+    }
+    .button .buttonImage{
+        height: 3rem;
+    }
+    .filterButtontext {
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+    .filterButton{
+        height: 2.7rem;
+        width: 30%;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    .text2{
+        font-size: 1rem;
+    }
+}
 

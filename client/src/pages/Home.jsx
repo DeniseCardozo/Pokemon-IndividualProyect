@@ -45,9 +45,10 @@ const Home = () => {
                         <MessageNotFound />
                     }
                 </div>
-                <NavBar />
+              
                 <Paginated pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginated={paginated} />
             </div>
+            <NavBar />
         </React.Fragment>
     )
 };

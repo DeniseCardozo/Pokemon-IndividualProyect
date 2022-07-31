@@ -91,3 +91,31 @@
         font-size: 1.1rem;
     }
 } 
+@media (max-width: 550px) {
+    .button, .buttonAll, .buttonOrder1, .buttonOrder2, .buttonExis, .buttonCrea {
+        font-size: 1.5rem;
+        height: 1.6rem;    }
+    .boxOrder, .orderArrow  {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 400px) {
+    .button, .buttonAll, .buttonOrder1, .buttonOrder2, .buttonExis, .buttonCrea {
+        font-size: 1.7rem;
+        height: 1.7rem;
+    }
+    .boxOrder, .orderArrow  {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .button, .buttonAll, .buttonOrder1, .buttonOrder2, .buttonExis, .buttonCrea {
+        font-size: 2rem;
+        height: 2.7rem;
+    }
+    
+    .boxOrder, .orderArrow  {
+        font-size: 2rem;
+    }
+}

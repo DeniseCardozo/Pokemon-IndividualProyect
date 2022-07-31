@@ -19,9 +19,11 @@ const PokemonDetail = (props) => {
     return (
         <React.Fragment>
             <div>
+            <div className={styles.bigBox}>
+
                 {
                     pokemon.name !== undefined ? (
-                        <div className={styles.bigBox}>
+                        <>
                             <div className={styles.boxImage}>
                                 <img className={styles.image} src={pokemon.image} alt="Pokeimage not found" />
                             </div>
@@ -59,11 +61,13 @@ const PokemonDetail = (props) => {
                                     </div>
                                </div>
                             </div>
-                        </div>
+                            </>
                     ) : <Loading />
                 }
+                          <NavBar />
+                </div>
             </div>
-            <NavBar />
+  
 
         </React.Fragment>
     )

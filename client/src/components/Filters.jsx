@@ -73,8 +73,8 @@ const Filters = ({setCurrentPage, setOrder}) => {
                     <button className={style.buttonCrea} value="created" onClick={(e) => handleFilterCreated(e)}>Created</button>
                 </div>
                 <div className={style.orderName}>
-                    <button className={style.buttonOrder1} value="ascending" onClick={(e) => handleOrderByName(e)}>Ascending (A-Z)</button>
-                    <button className={style.buttonOrder2} value="descending" onClick={(e) => handleOrderByName(e)}>Descending (Z-A)</button>
+                    <button className={style.buttonOrder1} value="ascending" onClick={(e) => handleOrderByName(e)}>Ascending</button>
+                    <button className={style.buttonOrder2} value="descending" onClick={(e) => handleOrderByName(e)}>Descending</button>
                 </div>
                 <div className={style.filterTypes}>   
                     {

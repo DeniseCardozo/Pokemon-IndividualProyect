@@ -55,8 +55,8 @@
 
 @media (max-width: 550px) {
     .completeCard {
-        width: 11rem;
-        height: 250px;
+        width: 12.5rem;
+        height: 260px;
         margin: 7px;
         }
     .completeCard img {
