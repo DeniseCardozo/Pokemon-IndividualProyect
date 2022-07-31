@@ -29,7 +29,12 @@
     background-image: url(../tools/pastitolargo.jpg);
     background-position: center center;
     background-attachment:scroll;
-    background-size:contain;
+    background-size:cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .content {
     max-width: 992px;
@@ -76,10 +81,14 @@
     }
     .image {    
         height: 250px;
-        width: 480px;
+        width: 100%;
     }
     .bigBox {
         background-size:cover;
-        width: 480px;
+        width: 100%;
     }
+}
+
+@media (max-width: 380px) {
+    
 }

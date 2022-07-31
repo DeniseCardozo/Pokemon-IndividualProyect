@@ -198,26 +198,26 @@ h4 span{
 }
 @media (max-width: 380px) {
     .inputName {
-        height: 3rem;
+        height: 2.5rem;
         width: 60%;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .button .buttonImage{
-        height: 3rem;
+        height: 2.5rem;
     }
     .filterButtontext {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 5px;
     }
     .filterButton{
-        height: 2.7rem;
-        width: 30%;
+        height: 2rem;
+        width: 35%;
     }
-    h4 {
-        font-size: 1.2rem;
+    h4{
+        font-size: 0.9rem;
     }
     .text2{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 

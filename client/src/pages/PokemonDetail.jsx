@@ -18,7 +18,6 @@ const PokemonDetail = (props) => {
 
     return (
         <React.Fragment>
-            <div>
             <div className={styles.bigBox}>
 
                 {
@@ -64,9 +63,7 @@ const PokemonDetail = (props) => {
                             </>
                     ) : <Loading />
                 }
-                          <NavBar />
                 </div>
-            </div>
   
 
         </React.Fragment>

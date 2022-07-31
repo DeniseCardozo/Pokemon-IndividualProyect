@@ -5,16 +5,16 @@ import Home from './pages/Home.jsx';
 import CreatePokemon from './pages/CreatePokemon.jsx';
 import PokemonDetail from './pages/PokemonDetail.jsx';
 import LandingPage from './pages/LandingPage.jsx';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
       <React.Fragment>     
-
           <Route exact path="/" component={LandingPage}/> 
           <Route exact path="/home" component={Home}/>  
           <Route exact path="/home/create" component={CreatePokemon} />
           <Route path="/detail/:idPokemon" component={PokemonDetail} /> 
-
+          <NavBar />
       </React.Fragment>
   );
 }
