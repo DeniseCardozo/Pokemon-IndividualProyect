@@ -62,7 +62,7 @@ router.get("/", (req, res, next)=>{
 
             const name = req.query.name;
             if (name) {
-                let characterByName = allPokemons.filter(pokemon => pokemon.name.toLowerCase() === name.toLowerCase() )
+                let characterByName = allPokemons.filter(pokemon => pokemon.name.toLowerCase().includes(name.toLowerCase()))
                 if(characterByName) {
                     return res.status(200).send(characterByName);
                 } else{
