@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import NavBar from "../components/NavBar.jsx";
 import { getPokemonById } from "../redux/actions/index.js";
 import Loading from "../components/Loading";
+import Egg from "../tools/egg.png"
+
 
 
 const PokemonDetail = (props) => {
@@ -24,7 +26,8 @@ const PokemonDetail = (props) => {
                     pokemon.name !== undefined ? (
                         <>
                             <div className={styles.boxImage}>
-                                <img className={styles.image} src={pokemon.image} alt="Pokeimage not found" />
+                                {pokemon.image ? (<img className={styles.image} src={pokemon.image} alt="Pokeimage not found" />) :
+                                (<img className={styles.image} src={Egg} alt="Pokeimage not found" />)  }
                             </div>
                             <div className={styles.boxData}>
                                 <div className={styles.contentName}>
@@ -35,7 +38,13 @@ const PokemonDetail = (props) => {
                                         <h3 className={styles.title}>Id: <p>{pokemon.id_Pokemon}</p></h3>
                                     </div>
                                     <div className={styles.contentTypes}>
-                                        <h3 className={styles.title}>Type: {pokemon.types}</h3> 
+                                        <h3 className={styles.title}>Type: 
+                                        {/* {pokemon.types} */}
+                                        </h3> 
+                                        {
+                                            pokemon.types.map((t) => {
+                                                return (<p className={styles.type}>{t.toUpperCase()}</p>)})
+                                        }
                                     </div>
                                     
                                     <div className={styles.prueba2}>
