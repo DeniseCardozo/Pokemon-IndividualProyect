@@ -76,3 +76,22 @@
         font-size: 0.8rem;
     }    
 }
+@media (max-width: 400px) {
+    .completeCard {
+        width: 8rem;
+        height: 220px;
+        margin: 7px;
+        }
+    .completeCard img {
+        margin-top: 10px;
+        height: 120px;
+        width: 120px;
+    } 
+    .completeCard .namePokemon {
+        font-size: 1rem;
+    }
+    .boxTypes {
+        height: 55px;
+    }
+    
+}

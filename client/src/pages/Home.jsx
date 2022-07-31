@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import { useState, useEffect } from "react";
 import {useDispatch, useSelector} from "react-redux";
 import { getAllPokemons } from "../redux/actions";
+import NavBar from "../components/NavBar.jsx";
 import Card from "../components/Card.jsx";
 import Paginated from "../components/Paginated.jsx";
 import SearchBar from "../components/SearchBar.jsx";
@@ -47,6 +48,7 @@ const Home = () => {
               
                 <Paginated pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginated={paginated} />
             </div>
+            <NavBar />
         </React.Fragment>
     )
 };

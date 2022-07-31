@@ -63,6 +63,7 @@ const PokemonDetail = (props) => {
                             </>
                     ) : <Loading />
                 }
+                          <NavBar />
                 </div>
   
 

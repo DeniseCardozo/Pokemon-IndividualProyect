@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { getAllTypes, postNewPokemon } from "../redux/actions";
 import validations from "../components/Validations.jsx"
+import NavBar from "../components/NavBar.jsx";
 
 const CreatePokemon = () => {
     const dispatch = useDispatch();
@@ -62,6 +63,7 @@ const CreatePokemon = () => {
 
     return (
         <React.Fragment>
+            <NavBar />
             <div className={styles.video}>
                 <div className={styles.content}>
                     <div className={styles.boxTitle}>

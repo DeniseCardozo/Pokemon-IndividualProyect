@@ -186,11 +186,11 @@ h4 span{
         font-size: 1.7rem;
     }
     .filterButton{
-        height: 2rem;
-        width: 25%;
+        height: 1.8rem;
+        width: 30%;
     }
     h4 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .text2{
         font-size: 1rem;
@@ -211,13 +211,13 @@ h4 span{
     }
     .filterButton{
         height: 2rem;
-        width: 35%;
+        width: 40%;
     }
     h4{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .text2{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
